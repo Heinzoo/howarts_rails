@@ -1,0 +1,18 @@
+<table class="table">
+  <thead class="table-dark text-center">
+    <th scope="col">ID</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Locación</th>
+    <th scope="col">Casa Mágica</th>
+  </thead>
+  <% for character in @characters do %>
+    <tbody class="text-center">
+      <tr scope="row">
+        <td><%= character.id %></td>
+        <td><%= character.name %></td>
+        <td><%= character.location %></td>
+        <td><%= character.house %></td>
+      </tr>
+    </tbody>
+  <% end %>
+</table>
